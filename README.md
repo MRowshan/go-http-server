@@ -1,6 +1,6 @@
 # go-http-server
 
-The app.go file can be run using: \n
+The app.go file can be run using:  
 	`go run app.go`
 or
 	```
