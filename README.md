@@ -1,7 +1,7 @@
 # go-http-server
 
 The app.go file can be run using:  
-	`go run app.go`
+>`go run app.go`
 or
 	```
 	go build app.go
@@ -9,10 +9,10 @@ or
 	./app.go (windows)
 	```
 
-###Running the app.go file hosts a webpage (/static/index.html) on port 9090
+Running the app.go file hosts a webpage (/static/index.html) on port 9090
 
 
-##A brief look at the code is shown below:
+A brief look at the code is shown below:
 
 A function which fills a http webpage with the following plain text
 ```
