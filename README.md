@@ -20,11 +20,11 @@ func write_text(wrt http.ResponseWriter, r *http.Request) {
 }
 ```
 
-Method which serves files in the static directory and assigns them to the url /
+Method which serves files in the static directory and assigns them to the url /  
 `http.Handle("/", http.FileServer(http.Dir("static")))`
-Method which serves the function "write_text" and assigns output to the url "/text"
+Method which serves the function "write_text" and assigns output to the url "/text"  
 `http.HandleFunc("/text", write_text)`
-Serve webpages on port 9090 and handle errors
+Serve webpages on port 9090 and handle errors  
 ```
 if err := http.ListenAndServe(":9090", nil); err != nil {
 panic(err)
