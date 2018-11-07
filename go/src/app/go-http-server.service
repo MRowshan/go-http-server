@@ -3,7 +3,7 @@ Description=Go HTTP Server
 
 [Service]
 User=go-user
-WorkingDirectory=/opt/go-http-server/public
+WorkingDirectory=/opt/go-http-server
 ExecStart=/opt/go-http-server/app
 
 [Install]

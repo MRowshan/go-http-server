@@ -10,8 +10,8 @@ build:
 install:
 	@cp ${NAME}.service ${SERVICE_SCRIPT}
 	@mkdir -p ${INSTALL_LOCATION}
-	@cp app.py ${INSTALL_LOCATION}
-	@cp -r public ${INSTALL_LOCATION}
+	@cp app ${INSTALL_LOCATION}
+	@cp -r static ${INSTALL_LOCATION}
 	@systemctl daemon-reload
 
 uninstall:
