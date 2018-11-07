@@ -5,7 +5,7 @@ The app.go file can be run using:
 or  
     `go build app.go`  
     `./app (linux)`  
-    `./app.go (windows)`  
+    `./app.exe (windows)`  
 
 Running the app.go file hosts a webpage (/static/index.html) on port 9090  
 
