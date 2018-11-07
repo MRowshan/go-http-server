@@ -1,0 +1,10 @@
+[Unit]
+Description=Go HTTP Server
+
+[Service]
+User=go-user
+WorkingDirectory=/opt/go-http-server/public
+ExecStart=/opt/go-http-server/app
+
+[Install]
+WantedBy=multi-user.target
