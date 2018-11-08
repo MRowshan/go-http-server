@@ -1,8 +1,11 @@
-.PHONY = build install uninstall
+.PHONY = build install uninstall make_user
 
 NAME = go-http-server
 INSTALL_LOCATION = /opt/${NAME}
 SERVICE_SCRIPT = /etc/systemd/system/${NAME}.service
+
+make_user:
+	@useradd go-user
 
 build:
 	@go build app.go
