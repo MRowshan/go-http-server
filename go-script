@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo make make_user
+sudo make install
+sudo server go-http-server start
