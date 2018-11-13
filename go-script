@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/go-http-server/go/src/app
+cd /vagrant/go-http-server/go/src/app
+chmod +x app
 sudo make make_user
 sudo make install
-sudo server go-http-server start
