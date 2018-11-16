@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd go-http-server/go/src/app
+cd go/src/app
 chmod +x app
 sudo make make_user
 sudo make install
