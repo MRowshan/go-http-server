@@ -1,0 +1,17 @@
+#!/bin/bash
+
+git clone https://github.com/mrowshan/go-http-server
+
+docker build -t go-http-server ~/go-http-server
+docker push mustakim/go-http-server
+
+if docker ps | grep go-http-server
+then
+	echo "exists"
+	docker stop go-http-server
+	docker rm go-http-server
+	docker run -d -p 9090:9090 --name go-http-server mustakim/go-http-server
+else
+	echo "doesn't exist"
+	docker run -d -p 9090:9090 --name go-http-server mustakim/go-http-server
+fi
